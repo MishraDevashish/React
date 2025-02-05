@@ -23,6 +23,19 @@ router.get("/getBooks", async(req,res)=>{
     } catch (error) {
         console.log(error);
     }
+});
+
+// get request introducing slug
+
+router.get("/getBooks/:id", async (req,res) =>{
+    let book;
+    let id=req.params.id;
+    try {
+      book= await bookModel.findById(id);
+      res.status(200).json(book)  
+    } catch (error) {
+        console.log(error);
+    }
 })
 
 module.exports =router;
