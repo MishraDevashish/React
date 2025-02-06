@@ -54,4 +54,17 @@ router.put("/updateBook/:id", async (req,res)=>{
         console.log(error)
     }
 })
+
+// last delete route
+
+router.delete("/delete/:id", async(req,res)=>{
+    let id=req.params.id;
+    try {
+        await bookModel.findByIdAndDelete(id).then(()=>{
+            res.status(200).json({message:"book is deleted"})
+        });
+    } catch (error) {
+        console.log(error)
+    }
+})
 module.exports =router;
