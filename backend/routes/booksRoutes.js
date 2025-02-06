@@ -37,5 +37,21 @@ router.get("/getBooks/:id", async (req,res) =>{
         console.log(error);
     }
 })
+ 
+//update book by id
 
+router.put("/updateBook/:id", async (req,res)=>{
+    let updated;
+    let updateDetail;
+    let id=req.params.id;
+    try {
+        updateDetail=req.body;
+        updated=await bookModel.findByIdAndUpdate(id,updateDetail);
+        updated.save().then(()=>{
+            res.status(200).json({message:"update sucessfull"})
+        })
+    } catch (error) {
+        console.log(error)
+    }
+})
 module.exports =router;
