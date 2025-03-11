@@ -1,0 +1,21 @@
+.Home-Page{
+    width: 100%;
+    min-height: 94vh;
+    max-height: auto;
+    padding:2px 60px ;
+    transition: all 2.5 ease-in-out;
+}
+
+.h2{
+    font-size: 60px;
+
+}
+.view{
+    font-size: 20px;
+    border: white solid 2px;
+    background-color: transparent;
+    padding: 5px;
+    margin: 5px 20px;
+    color: white;
+
+}
