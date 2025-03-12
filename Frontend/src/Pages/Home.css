@@ -7,7 +7,8 @@
 }
 
 .h2{
-    font-size: 60px;
+    margin-bottom:20px ;
+    font-size: 90px;
 
 }
 .view{
@@ -15,7 +16,8 @@
     border: white solid 2px;
     background-color: transparent;
     padding: 5px;
-    margin: 5px 20px;
+    margin: 15px 20px;
     color: white;
+    text-decoration: none;
 
 }
