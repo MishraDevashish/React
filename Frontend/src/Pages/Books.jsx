@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { useEffect } from 'react'
 import axios from "axios"
 import BookSection from '../Component/BookSection'
+import './Books.css'
 
 const Books = () => {
     const [Data, setData] = useState()
@@ -13,10 +14,10 @@ const Books = () => {
     }, [])
     
   return (
-    <div className="bg-dark" style={{height:"92vh"}}>
-      <div className='d-flex justify-content-center align-items-start text-white py-3'>
+    <div className="bg-dark no-scrollbar" style={{height:"92vh",overflow:"auto"}}>
+      <div className='d-flex justify-content-center align-items-start text-white py-3 no-scrollbar'>
         <h4>Books Section</h4>
-      </div>
+      </div >
       {Data ?
        ( <BookSection book={Data}/>) : (<div className='text-white'>Loading</div>)}
     </div>
