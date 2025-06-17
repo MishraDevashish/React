@@ -222,3 +222,12 @@ app.listen(3000,()=>{
 
 export default App;
 ```
+## 📬 Contact
+
+**Devashish Mishra**  
+📧 devashishmishra39@gmail.com  
+🔗 [LinkedIn](https://www.linkedin.com/in/mishra-devashish11/)  
+
+---
+
+> ⭐ *If you like this project, please give it a star on GitHub!*  
