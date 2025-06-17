@@ -5,7 +5,7 @@ A full-stack Book Management System built with the MERN stack. Users can add, up
 ---
 
 ## 🔗 Live Demo
-
+[Click here to view the app](https://bookappclient.vercel.app/)
 
 ## 🛠 Tech Stack
 
