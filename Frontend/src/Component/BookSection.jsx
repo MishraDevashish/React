@@ -13,7 +13,7 @@ const BookSection = ({ book }) => {
     const handleDelete = async (id) => {
         try {
 
-          const res = await axios.delete(`${process.env.REACT_APP_API_BASE}/delete/${id}`);
+          const res = await axios.delete(`https://bookapp1-v4ta.onrender.com/api/v1/delete/${id}`);
           alert(res.data.message);
           setBooks(books.filter(book => book._id !== id));  // Remove deleted book from state
         } catch (error) {

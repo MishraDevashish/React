@@ -9,8 +9,8 @@ app.use(express.json())
 app.use("/api/v1",bookRoute)
 
 
+const PORT = process.env.PORT || 5000;
 
-
-app.listen(3000,()=>{
+app.listen(PORT,()=>{
     console.log("Server get started")
 });

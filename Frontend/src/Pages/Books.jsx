@@ -8,7 +8,7 @@ const Books = () => {
     const [Data, setData] = useState()
     useEffect(() => {
       const fetch =async()=>{
-        await axios.get(`${process.env.REACT_APP_API_BASE}/getBooks`).then((res)=> setData(res.data.books))
+        await axios.get("https://bookapp1-v4ta.onrender.com/api/v1/getBooks").then((res)=> setData(res.data.books))
       }
      fetch();
     }, [])
