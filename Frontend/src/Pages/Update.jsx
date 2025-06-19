@@ -14,7 +14,7 @@ const Update= () => {
     price: ""
   });
   useEffect(() => {
-    axios.get(`http://localhost:3000/api/v1/getBooks/${id}`)
+    axios.get(`${process.env.REACT_APP_API_BASE}/getBooks/${id}`)
       .then(res => setdata(res.data))
       .catch(err => console.log(err));
   }, [id]);
@@ -25,7 +25,7 @@ const Update= () => {
   const Summit = async(e)=>{
     e.preventDefault();
     try {
-        await axios.put(`http://localhost:3000/api/v1/updateBook/${id}`, data);
+        await axios.put(`${process.env.REACT_APP_API_BASE}/updateBook/${id}`, data);
         alert("Book updated successfully");
         navigate("/"); // go back to main page
       } catch (err) {

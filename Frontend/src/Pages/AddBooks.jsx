@@ -16,7 +16,9 @@ const AddBooks = () => {
   };
   const Summit = async (e) => {
     e.preventDefault();
-    await axios.post("http://localhost:3000/api/v1/add", data).then((res) => { console.log(res) })
+    const API_BASE = process.env.REACT_APP_API_BASE;
+
+    await axios.post(`${API_BASE}/add `, data).then((res) => { console.log(res) })
     setdata({
       name: "",
       bookname: "",
