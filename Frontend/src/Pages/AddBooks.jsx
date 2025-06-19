@@ -16,7 +16,7 @@ const AddBooks = () => {
   };
   const Summit = async (e) => {
     e.preventDefault();
-    const API_BASE = process.env.REACT_APP_API_BASE;
+    
 
     await axios.post("https://bookapp1-v4ta.onrender.com/api/v1/add", data).then((res) => { console.log(res) })
     setdata({
